@@ -6,11 +6,7 @@ Console.WriteLine("Digite um ano: ");
 ano = int.Parse(Console.ReadLine());
 
 
-if (ano % 400 == 0)
-{
-    Console.WriteLine("É um ano bisexto");
-}
-else if (ano % 4 == 0 && ano % 100 != 0) 
+if (ano % 400 == 0 || ano % 4 == 0 && ano % 100 != 0)
 {
     Console.WriteLine("É um ano bisexto");
 }
