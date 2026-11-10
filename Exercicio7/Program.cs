@@ -9,24 +9,24 @@ peso = float.Parse(Console.ReadLine());
 Console.WriteLine("Digite a altura(cm): ");
 altura = float.Parse(Console.ReadLine());
 
-altura = altura / 100;
+altura /= 100;
 
 imc = peso / (altura * altura);
 
-Console.WriteLine("seu IMC é: " + imc);
+Console.WriteLine($"seu IMC é: {imc:F2}");
 if (imc >= 30)
 {
     Console.WriteLine("Obesidade");
 }
-if (imc <= 29.99 && imc >=25.0)
+else if (imc >=25.0)
 {
     Console.WriteLine("Sobrepeso");
 }
-if (imc <= 24.99 && imc >= 18.5)
+else if (imc >= 18.5)
 {
     Console.WriteLine("Peso Normal");
 }
-if (imc < 18.5)
+else if (imc < 18.5)
 {
     Console.WriteLine("Abaixo do peso");
 }
