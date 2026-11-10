@@ -21,4 +21,4 @@ nota4 = float.Parse(Console.ReadLine());
 
 media = (nota1 + nota2 + nota3 + nota4) / 4;
 
-Console.WriteLine("Sua media das 4 notas foi: " + media);
+Console.WriteLine($"Sua media das 4 notas foi {media:F2}" );
